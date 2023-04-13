@@ -7,7 +7,7 @@ const { setTimeout } = require("timers/promises");
 
 
 const lexruntime = new AWS.LexRuntimeV2({
-  credentials: new AWS.Credentials("AKIAXMKWF5MMR4J6REEI", "OwzYhtnczQd+j0utOzumCgjMRci75jPG+BmzeP1J"),
+  credentials: new AWS.Credentials("AKIAXMKWF5MM2ONMEJS4", "OnLSFvQy64WkjGGTsDIiRjlN5ygNXDGEpdm5HYBa"),
   region: 'us-east-1'
 });
 
