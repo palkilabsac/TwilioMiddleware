@@ -1,16 +1,14 @@
-const express = require('express')
-const router = express.Router()
+require('dotenv').config();
+const express = require('express');
+const router = express.Router();
 const AWS = require('aws-sdk');
 const { MessagingResponse } = require('twilio').twiml;
 const { setTimeout } = require("timers/promises");
 
-
-
 const lexruntime = new AWS.LexRuntimeV2({
-  credentials: new AWS.Credentials("AKIAXMKWF5MM2ONMEJS4", "OnLSFvQy64WkjGGTsDIiRjlN5ygNXDGEpdm5HYBa"),
+  credentials: new AWS.Credentials(process.env.API_KEY, process.env.API_KEY_2),
   region: 'us-east-1'
 });
-
 
 router.post('/', function(req, res) {
     console.log("RECIVE QUERY");
