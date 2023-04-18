@@ -6,7 +6,7 @@ const { MessagingResponse } = require('twilio').twiml;
 const { setTimeout } = require("timers/promises");
 
 const lexruntime = new AWS.LexRuntimeV2({
-  credentials: new AWS.Credentials(process.env.API_KEY, process.env.API_KEY_2),
+  credentials: new AWS.Credentials(process.env.ACCESS_KEY, process.env.SECRET_ACCESS_KEY),
   region: 'us-east-1'
 });
 
